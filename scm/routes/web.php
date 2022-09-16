@@ -110,7 +110,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
 //Auth::routes();
 //luan
-
+//h
 /*
 
 
