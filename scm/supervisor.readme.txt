@@ -1,0 +1,4 @@
+To restart supervisor after an upgrade:
+  brew services restart supervisor
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/supervisor/bin/supervisord -c /opt/homebrew/etc/supervisord.conf --nodaemon

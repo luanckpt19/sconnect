@@ -1,0 +1,349 @@
+body{color: #3e3e3e; font-size: 14px;} .p-10{padding: 10px;} .ptop-10{padding-top: 10px;} .pleft-10{padding-left: 10px;} .phorz-10{padding: 0px 10px;} .pvert-10{padding: 0px 10px;} .inline{display: inline-block;}
+#app {padding: 10px;} .text-ellipsis{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+#app a:HOVER{text-decoration: underline;}
+a{color: #35661c; } .nowrap{white-space: nowrap;}
+.pad15 {padding: 5px 15px;} .padv3h15 {padding: 3px 15px;}
+.no-underline{text-decoration: none;} .no-underline:HOVER {text-decoration: none!important;} 
+.subs{border-top: 1px dotted black; margin-left: -1em; padding-left: 1em;}
+.table-no-border td{border: 0!important; padding: 0.4rem 0rem!important;}
+i.fa, i.fas, i.far {color: #247605;} ul {list-style-type: none;}
+.comment-box{background-color: #eeeeee; border-radius: 10px; padding: 5px 8px;}
+.d-inline-nowrap {display: inline-block; white-space: nowrap;}
+.temp{color: #f7fbe7}
+/* spin loader */
+.loader {
+	display: inline-block;
+  	border: 3px solid #f3f3f3;
+  	border-radius: 50%;
+  	border-top: 3px solid #3498db;
+  	width: 20px;
+  	height: 20px;
+  	-webkit-animation: spin 2s linear infinite; /* Safari */
+  	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* breadcrumb có background box */
+.breadcrumb-item + .breadcrumb-item::before {
+   content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+) !important;
+}
+.breadcrumb-item, .breadcrumb-item a {color: #565D64!important;}
+/* breadcrumb không có background box */
+.breadcrumb-none {display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;}
+
+.is-invalid,.color-danger {color: #ff5648!important} 
+.nav-sconnect {
+/*Color: D7F70E A7E121 80D700 38B235 2F9906 247605 */	
+}
+.hide{display: none;} .show{display: '';}
+
+.text-color1 {color: #247605!important}
+.text-color2 {color: #2F9906!important}
+.text-color3, text-success {color: #38B235!important}
+.text-blue {color: #277BFE!important}
+.text-grey {color: #666666!important}
+.text-lt-grey {color: #999999!important}
+.text-dorange {color: #ca7709!important;}
+.text-orange {color: #e8b700!important;}
+
+.heading1 {font-size: 20px;}
+.heading2 {font-size: 18px;}
+.heading3 {font-size: 16px;}
+.heading4 {font-size: 14px;}
+.title {font-size: 14px; font-weight: bold;}
+.normal {font-size: 14px; }
+.alias {font-size: 13px; color:#555555;}
+.bold {font-weight: bold;}
+.circle-vert{display: inline-block; padding: 2px 11px; border: 1px solid #EBF0D4; border-radius: 100%}
+.circle-vert:HOVER{background-color: #FAFFDF;}
+a.folder{text-decoration: none; color: #333333; cursor: default;}
+a.folder:HOVER{text-decoration: none!important;}
+
+.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #a1a1a0;
+}
+
+.page-item.active .page-link {
+	background-color: #247605!important;
+    border-color: #247605!important;
+    color: #ffffff!important;
+}
+.page-link {color: #247605!important;}
+
+.user-default-avatar {
+	background: #7b8691 url(/images/ui-user.svg?v2) no-repeat center;
+    background-size: 100% auto;
+}
+.dept-manager-avatar {float: left; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; height: 50px; width: 50px; position: relative; margin: 0 20px 19px 0;}
+.structure-avatar {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20viewBox%3D%220%200%2089%2089%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3Euserpic%3C/title%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Ccircle%20fill%3D%22%23535C69%22%20cx%3D%2244.5%22%20cy%3D%2244.5%22%20r%3D%2244.5%22/%3E%3Cpath%20d%3D%22M68.18%2071.062c0-3.217-3.61-16.826-3.61-16.826%200-1.99-2.6-4.26-7.72-5.585-1.734-.483-3.383-1.233-4.887-2.223-.33-.188-.28-1.925-.28-1.925l-1.648-.25c0-.142-.14-2.225-.14-2.225%201.972-.663%201.77-4.574%201.77-4.574%201.252.695%202.068-2.4%202.068-2.4%201.482-4.3-.738-4.04-.738-4.04.388-2.625.388-5.293%200-7.918-.987-8.708-15.847-6.344-14.085-3.5-4.343-.8-3.352%209.082-3.352%209.082l.942%202.56c-1.85%201.2-.564%202.65-.5%204.32.09%202.466%201.6%201.955%201.6%201.955.093%204.07%202.1%204.6%202.1%204.6.377%202.556.142%202.12.142%202.12l-1.786.217c.024.58-.023%201.162-.14%201.732-2.1.936-2.553%201.485-4.64%202.4-4.032%201.767-8.414%204.065-9.193%207.16-.78%203.093-3.095%2015.32-3.095%2015.32H68.18z%22%20fill%3D%22%23FFF%22/%3E%3C/g%3E%3C/svg%3E);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.structure-boss-block {
+    height: 30px;
+    margin: 8px 8px 0 9px;
+    padding: 0 0 0 34px;
+    position: relative;
+}
+.structure-boss-name {
+    color: #000;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    padding-top: 1px;
+    width: 152px;
+    white-space: nowrap;
+}
+.structure-manager {
+    color: #000;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 11px;
+    overflow: hidden;
+    opacity: .6;
+    text-overflow: ellipsis;
+    padding: 1px 0;
+    width: 152px;
+    white-space: nowrap;
+}
+
+.btn-round {border: 1px solid #80D700; background-color: #fefefe; border-radius: 20px; padding: 5px 10px;}
+.btn-round:HOVER {background-color: #55A7E121;}
+.link-underline-hover:HOVER{text-decoration: underline;}
+.round4 {border: 1px solid #80D700; background-color: #fefefe; border-radius: 4px; padding: 5px 10px;}
+
+.ic24 {width: 24px; height: 24px; } 
+.ic32 {width: 32px; height: 32px; }
+.margin-top {margin-top: 10px;}
+.cursor-hand{cursor: pointer;}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-x::-webkit-scrollbar {
+  display: none;
+  overflow-x: scroll;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-x {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: scroll;
+}
+
+/* ***************************************** */
+/* It's supposed to look like a tree diagram */
+.tree, .tree ul, .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tree {
+    margin: 0 0 1em;
+    /*text-align: center;*/
+}
+.tree, .tree ul {
+    display: table;
+}
+.tree ul {
+  width: 100%;
+}
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+/* _________ */
+.tree li:before {
+    outline: 1px solid rgba(255,0,0,.5);
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tree li:first-child:before {left: 50%;}
+.tree li:last-child:before {right: 50%;}
+
+.tree code {
+	font-family: Arial,Roboto,"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	background-color: #05D7F70E;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+	box-shadow: 0 0 1px rgb(0 0 0 / 30%), 0 1px 3px rgb(0 0 0 / 40%);
+    display: inline-block;
+    margin: 0 .5em .6em;    
+    position: relative;    
+}
+.tree code {
+	max-width: 240px;
+    min-width: 200px;
+    height: 120px;
+    text-align: left;
+}
+/* If the tree represents DOM structure */
+
+/* | */
+.tree ul:before,
+.tree code:before {
+    outline: 1px solid rgba(255,0,0,.5);
+    content: "";
+    height: .4em;
+    left: 50%;
+    position: absolute;
+	margin-top:1px;
+}
+.tree ul:before {
+    top: -.5em;
+}
+.tree code:before {
+    top: -.55em;
+}
+
+/* The root node doesn't connect upwards */
+.tree > li {margin-top: 0;}
+.tree > li:before,
+.tree > li:after,
+.tree > li > code:before{
+  outline: none;
+}
+
+.line{border-bottom: 1px solid #8DBCD2; padding: 4px 6px;}
+.tree code .body {padding: 6px; text-align: left; color: #333333; height: calc(100% - 31px); overflow: hidden;}
+.dept-title1 {font-size: 14px; font-weight: 700; color: #247605; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.dept-title2 {font-size: 14px; font-weight: 700; color: #38B235; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.dept-title3 {font-size: 14px; font-weight: 700; color: #38B235; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
+.setting-table-area {padding-top: 20px; margin-left: -20px; margin-right: -20px; margin-bottom: -32px;}
+
+
+/* STYLE FOR CATEGORY TREE VIEW */
+ .cat-tree li {
+	 list-style-type: none;
+	 margin: 5px 0 5px 5px;
+	 position: relative;
+}
+ .cat-tree li:before {
+	 content: "";
+	 /*counter-increment: item;*/
+	 position: absolute;
+	 top: -5px;
+	 left: -40px;
+	 border-left: 1px dashed #ccc;
+	 border-bottom: 1px dashed #ccc;
+	 width: 20px;
+	 height: 11px;
+}
+ .cat-tree li:after {
+	 position: absolute;
+	 content: "";
+	 top: 5px;
+	 left: -40px;
+	 border-left: 1px dashed #ccc;
+	 border-top: 1px dashed #ccc;
+	 width: 20px;
+	 height: 100%;
+}
+ .cat-tree li:last-child:after {
+	 display: none;
+}
+ .cat-tree li span {
+	 display: block;
+	 border: 1px solid #ddd;
+	 padding: 10px;
+	 color: #333333;
+	 text-decoration: none;
+	 margin-left: -20px;
+}
+ .cat-tree li span:before {
+	 content: "";
+}
+ .cat-tree li span:hover, .cat-tree li span:focus {
+	 color: #000;
+	 border: 1px solid #aaaaaa;
+}
+ .cat-tree li span:hover + ol li span, .cat-tree li span:focus + ol li span {
+	 color: #000;
+	 border: 1px solid #aaaaaa;
+}
+ .cat-tree li span:hover + ol li:after, .cat-tree li span:focus + ol li:after, .cat-tree li span:hover + ol li:before, .cat-tree li span:focus + ol li:before {
+	 border-color: #aaaaaa;
+}
+.cat-tree li span {
+	 background-color: #ddf3fe;
+}
+.cat-tree li li span {
+	 background-color: #ddebc8;
+}
+.cat-tree li li li span {
+	 background-color: #fefcd5;
+}
+span.action-box {float: right; background: none!important; border: 0!important;display: inline-block!important; padding: 0!important;}
+/* ===== STYLE FOR CATEGORY TREE VIEW ===== */
+
+/* ===== STYLE FOR FOLDER TREE VIEW ===== */
+.folder-selected {border: 1px solid #e0e0e0; background-color: #f6ffcc!important; border-radius: 20px; display: block;}
+ul.folder-tree { padding-left: 1em; }
+ul.folder-tree, li { list-style: none; margin: 0; padding: 0; }
+
+ul.folder-tree li { 
+	padding: 1em 0em 0em 1em;
+  	border: 1px dotted black;
+  	border-width: 0 0 1px 1px;   
+}
+
+ul.folder-tree li.container { border-bottom: 0px; }
+
+ul.folder-tree li.empty { font-style: italic;
+  color: silver;
+  border-color: silver;
+}
+
+ul.folder-tree li p { margin: 0;
+  background: white;
+  position: relative;
+  top: 0.5em; 
+  margin-bottom: -10px;
+}
+
+ul.folder-tree li ul { 
+  /*border-top: 1px dotted black;*/ 
+  margin-left: -1em;     
+  padding-left: 2em; 
+}
+ul.folder-tree li:last-child ul {
+  border-left: 1px solid white;
+  margin-left: -17px;
+}
+
+/* ===== END FOLDER TREE VIEW ===== */
+
+
